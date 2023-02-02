@@ -40,19 +40,21 @@ const Home = () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>This is Eren Yeager</h1>
+            <h1>TL:DR</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Ask Eren from Attack On Titans ANYTHING</h2>
+            <h2>Write the title of the book below, we will generate a perfect summary of that book in under 500 words.</h2>
           </div>
         </div>
+        {/* added code here */}
         <div className="prompt-container">
-          <textarea placeholder="start typing here" 
-          className="prompt-box" 
+        <textarea
+          className="prompt-box"
+          placeholder="start typing here"
           value={userInput}
           onChange={onUserChangedText}
-          />;
-          <div className="prompt-buttons">
+        />;
+        <div className="prompt-buttons">
           <a
             className={isGenerating ? 'generate-button loading' : 'generate-button'}
             onClick={callGenerateEndpoint}
@@ -74,17 +76,18 @@ const Home = () => {
           </div>
         </div>
       )}
-        </div>
+      </div>
       </div>
       <div className="badge-container grow">
         <a
-          href="https://buildspace.so/builds/ai-writer"
+          // href="https://buildspace.so/builds/ai-writer"
+          href="https://twitter.com/albin_mathews"
           target="_blank"
           rel="noreferrer"
         >
           <div className="badge">
             <Image src={buildspaceLogo} alt="buildspace logo" />
-            <p>build with buildspace</p>
+            <p>built by almajoo ft. buildspace</p>
           </div>
         </a>
       </div>
